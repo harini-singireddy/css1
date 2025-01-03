@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing:border-box;
+        }
+        html{
+            font-size:62.5%;
+        }
+        body{
+            height:100vh;
+            width:100vw;
+            display:grid;
+            place-items: center;
+        }
+        .container-img{
+            min-width:60vw;
+            min-height:30rem;
+            border-radius:1rem;
+            box-shadow:rgba(100,100,111,0.2) 0px 7px 20px 0 px;
+            background-image: linear-gradient(rgb(105, 105, 233),rgb(164, 64, 129));
+            background-size:cover;
+            animation:gallery 20s linear infinite;
+        }
+        @keyframes gallery{
+            0%{
+                background-image: linear-gradient(rgb(105, 105, 233),rgb(164, 64, 129));
+            }
+            20%{
+                background-image:linear-gradient(rgb(182, 25, 25),rgb(225, 229, 13));
+            }
+            40%{
+                background-image: linear-gradient(rgb(105, 105, 233),rgb(164, 64, 129));
+            }
+            60%{
+                background-image:linear-gradient(rgb(182, 25, 25),rgb(225, 229, 13));
+            }
+            
+            80%{
+                background-image: -o-linear-gradient(rgb(105, 105, 233),rgb(164, 64, 129));
+            }
+            100%{
+                background-image:linear-gradient(rgb(182, 25, 25),rgb(225, 229, 13));
+            }
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausal</title>
+</head>
+<body>
+    <div class="container-img"></div>
+</body>
+</html>

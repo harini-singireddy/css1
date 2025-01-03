@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            width:100vw;
+            background-image:linear-gradient(rgb(192, 60, 134),rgb(36, 185, 36));
+            background-size: 100% 100%;
+           
+        }
+        .rain{
+            width: 100vw;
+            height:100vh;
+            background-image:linear-gradient(rgb(29, 29, 128),rgb(168, 168, 56));
+            animation:rains .4s linear infinite;
+        }
+        @keyframes rains{
+            0%{
+                background-color: transparent;
+                background-position:0% 0%;
+            }
+            100%{
+              
+                background-position:10% 100%;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rain"></div>
+</body>
+</html>
